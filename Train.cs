@@ -19,17 +19,6 @@ namespace publicTransformation_Abstraction
         {
             Console.WriteLine($"The {Name} is moving from {Routes[RouteIndex]} at a speed of {MaxSpeed} km/h.");
         }
-        public override void goToNextStation()
-        {
-            if (RouteIndex < Routes.Length - 1)
-            {
-                Console.WriteLine($"The next station is {Routes[++RouteIndex]}");
-            }
-            else
-            {
-                Console.WriteLine("End of line!");
-            }
-        }
 
         internal override void OpenDoor()
         {

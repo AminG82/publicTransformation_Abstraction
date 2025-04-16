@@ -24,7 +24,17 @@ namespace publicTransformation_Abstraction
         {
             Console.WriteLine($"The {Name} is braking.");
         }
-        public abstract void goToNextStation();
+        public  void goToNextStation()
+        {
+            if (RouteIndex < Routes.Length - 1)
+            {
+                Console.WriteLine($"The next station is {Routes[++RouteIndex]}");
+            }
+            else
+            {
+                Console.WriteLine("End of line!");
+            }
+        }
 
         public void DoorManager()
         {

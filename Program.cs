@@ -17,7 +17,7 @@
             car01.goToNextStation();
             car01.goToNextStation();
             car01.goToNextStation();
-            /*
+            
             Bus bus01 = new Bus(routes, "Bus 01", 80, "Blue");
             bus01.Horn();
             bus01.Move();
@@ -35,7 +35,7 @@
             train01.Brake();
             train01.goToNextStation();
             train01.DoorManager();
-            */
+            
             Console.ReadKey();
         }
     }
