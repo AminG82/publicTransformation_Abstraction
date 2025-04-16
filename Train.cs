@@ -21,7 +21,14 @@ namespace publicTransformation_Abstraction
         }
         public override void goToNextStation()
         {
-            Console.WriteLine($"The next station is {Routes[++RouteIndex]}");
+            if (RouteIndex < Routes.Length - 1)
+            {
+                Console.WriteLine($"The next station is {Routes[++RouteIndex]}");
+            }
+            else
+            {
+                Console.WriteLine("End of line!");
+            }
         }
 
         internal override void OpenDoor()
