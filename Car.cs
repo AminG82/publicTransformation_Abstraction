@@ -23,9 +23,18 @@ namespace publicTransformation_Abstraction
         }
         public override void goToNextStation()
         {
-            ++RouteIndex;
-            Console.WriteLine($"The next station is {Routes[RouteIndex]}");
+           // ++RouteIndex;
+            Console.WriteLine($"The next station is {Routes[++RouteIndex]}");
         }
 
+        internal override void OpenDoor()
+        {
+            Console.WriteLine("Door is Open");
+        }
+
+        internal override void CloseDoor()
+        {
+            Console.WriteLine("Door is Close");
+        }
     }
 }

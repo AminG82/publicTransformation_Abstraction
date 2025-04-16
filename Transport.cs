@@ -13,6 +13,8 @@ namespace publicTransformation_Abstraction
         public string? Color { get; set; }
         public string[]? Routes { get; set; }
         public int RouteIndex { get; set; } = 0;
+        internal abstract void OpenDoor();
+        internal abstract void CloseDoor();
         public void Horn()
         {
             Console.WriteLine("Beep Beep!");
@@ -23,5 +25,12 @@ namespace publicTransformation_Abstraction
             Console.WriteLine($"The {Name} is braking.");
         }
         public abstract void goToNextStation();
+
+        public void DoorManager()
+        {
+            OpenDoor();
+            Thread.Sleep(5000);
+            CloseDoor();
+        }
     }
 }
