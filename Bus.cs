@@ -17,7 +17,7 @@ namespace publicTransformation_Abstraction
         }
         public override void Move()
         {
-            Console.WriteLine($"The {Name} is moving at a speed of {MaxSpeed} km/h.");
+            Console.WriteLine($"The {Name} is moving from {Routes[RouteIndex]} at a speed of {MaxSpeed} km/h.");
         }
         public override void goToNextStation()
         {

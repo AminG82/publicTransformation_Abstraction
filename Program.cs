@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            string[] routes = { "Station A", "Station B", "Station C" };
+            string[] routes = { "Station A", "Station B", "Station C" , "Station D" };
             Car car01 = new Car(routes, "Pride", 150, "Red");
 
             car01.Move();
@@ -14,6 +14,7 @@
             car01.Brake();
             car01.goToNextStation();
             car01.DoorManager();
+            car01.goToNextStation();
 
             Bus bus01 = new Bus(routes, "Bus 01", 80, "Blue");
             bus01.Horn();
